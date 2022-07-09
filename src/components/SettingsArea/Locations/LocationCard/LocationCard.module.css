@@ -1,0 +1,7 @@
+.locationCard {
+    width: 304px;
+    height: 173px;
+    padding: 20px;
+    border: 1px solid rgba(175, 182, 198, 0.4);
+    border-radius: 6px;
+}
