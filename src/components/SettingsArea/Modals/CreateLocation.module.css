@@ -1,0 +1,556 @@
+.locationName {
+    width: 470px;
+    height: 48px;
+
+    padding: 10px 16px;
+    border-radius: 4px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 182, 198, 0.4);
+    outline: none;
+}
+
+.workWeek {
+    margin-top: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.star {
+    color: #F24445;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.workWeek {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.daysCheckboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px 30px;
+}
+
+.daysLabel {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.daysLabel input {
+    position: absolute;
+    top: 1px;
+    left: -20px;
+}
+
+.fakeCheckbox{
+    margin-right: 8px;
+    background: #EEF7FC;
+    border: 1px solid #00A0EC;
+    border-radius: 3px;
+}
+
+.accountingYear {
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accountingYear:before {
+    position: absolute;
+    content: "Leave Quota Reset Based On";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    background-color: #fff;
+    padding: 3px;
+    width: 170px;
+    height: 15px;
+    top: -10px;
+    left: 10px;
+}
+
+.accountingYear .infoSvg {
+    cursor: pointer;
+    position: relative;
+}
+
+.accountingYearInfo {
+    position: absolute;
+    width: 314px;
+    height: 111px;
+    background-color: rgba(30, 33, 42, 0.8);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    top: -105px;
+    right: -250px;
+}
+
+.accountingYearInfo:before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 47px;
+    width: 5px;
+    height: 5px;
+    border: 5px solid transparent;
+    border-top: 5px solid rgba(30, 33, 42, 0.8);
+}
+
+.accountingYearInput {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /*color: #AFB6C6;*/
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 182, 198, 0.4);
+    outline: none;
+    width: 438px;
+    height: 48px;
+    padding: 10px 16px;
+
+    appearance: none;
+    background: url(./../../../assets/selectImg.svg) no-repeat 420px;
+}
+
+.accountingYearInput:after {
+    position: absolute;
+    content: "Leave Quota Reset Based On";
+    width: 158px;
+    height: 15px;
+    padding: 0 9px;
+    top: -6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #1E212A;
+    /*background-color: #fff;*/
+}
+
+option {
+    background-color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    min-height: 48px;
+
+}
+option:checked {
+    background-color: #434EAA;
+    font-weight: 600;
+}
+option:hover {
+    background-color: #fff;
+}
+
+.fircalYearStart {
+    margin-top: 24px;
+    position: relative;
+}
+
+.fircalYearStart:before {
+    position: absolute;
+    content: "Fiscal Year Start";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    background-color: #fff;
+    padding: 3px;
+    width: 103px;
+    height: 17px;
+    top: -10px;
+    left: 10px;
+}
+
+.fircalYearStartMounth, .fircalYearStartDay {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 182, 198, 0.4);
+    outline: none;
+    height: 48px;
+    padding: 10px 16px;
+    appearance: none;
+}
+
+.fircalYearStartMounth {
+    width: 125px;
+    background: url(./../../../assets/selectImg.svg) no-repeat 110px;
+    margin-right: 16px;
+}
+
+.fircalYearStartDay {
+    width: 80px;
+    background: url(./../../../assets/selectImg.svg) no-repeat 65px;
+}
+
+.noBroughtInfo {
+    position: absolute;
+    width: 314px;
+    height: 111px;
+    background-color: rgba(30, 33, 42, 0.8);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    bottom: 28px;
+    right: -35px;
+}
+
+.noBroughtInfo:before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50px;
+    width: 5px;
+    height: 5px;
+    border: 5px solid transparent;
+    border-top: 5px solid rgba(30, 33, 42, 0.8);
+}
+
+.noBrought{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 24px;
+}
+
+.noBrought label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.noBrought input {
+    margin-right: 16px;
+}
+
+.noBrought p {
+    margin-right: 6px;
+    margin-bottom: 0;
+}
+
+.weekStart {
+    margin-top: 24px;
+    position: relative;
+}
+
+.weekStartInput {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 182, 198, 0.4);
+    outline: none;
+    width: 145px;
+    height: 48px;
+    padding: 10px 16px;
+
+    appearance: none;
+    background: url(./../../../assets/selectImg.svg) no-repeat 125px;
+}
+
+.weekStart:before {
+    position: absolute;
+    content: "Week Starts On";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    background-color: #fff;
+    padding: 3px;
+    width: 95px;
+    height: 17px;
+    top: -10px;
+    left: 14px;
+}
+
+.timeZone {
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timeZone:before {
+    position: absolute;
+    content: "Time Zone";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    background-color: #fff;
+    padding: 3px;
+    width: 75px;
+    height: 17px;
+    top: -10px;
+    left: 14px;
+}
+
+.timeZone:after {
+    position: absolute;
+    content: "*";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #fff;
+    color: red;
+    top: -8px;
+    left: 77px;
+}
+
+.timeZoneInput {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /*color: #AFB6C6;*/
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 182, 198, 0.4);
+    outline: none;
+    width: 438px;
+    height: 48px;
+    padding: 10px 16px;
+    margin-right: 16px;
+
+    appearance: none;
+    background: url(./../../../assets/selectImg.svg) no-repeat 420px;
+}
+
+.timeZoneInfo {
+    height: 93px;
+    width: 279px;
+    background-color: rgba(30, 33, 42, 0.8);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    bottom: 43px;
+    right: -212px;
+    position: absolute;
+
+}
+
+.timeZoneInfo:before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50px;
+    width: 5px;
+    height: 5px;
+    border: 5px solid transparent;
+    border-top: 5px solid rgba(30, 33, 42, 0.8);
+}
+
+.users {
+    margin: 24px 0 4px;
+}
+
+.usersInput {
+    min-width: 470px;
+    max-width: 470px;
+}
+.usersInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.usersInfo p {
+    margin-left: 8px;
+    width: 446px;
+    height: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #868C98;
+    margin-bottom: 0;
+}
+
+.makeDefault {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 24px;
+}
+
+.makeDefault label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.makeDefault input {
+    margin-right: 16px;
+}
+
+.makeDefault p {
+    align-self: center;
+    align-item: center;
+    margin-right: 6px;
+    margin-bottom: 0;
+}
+
+.makeDefaultInfo {
+    position: absolute;
+    width: 279px;
+    height: 70px;
+    background-color: rgba(30, 33, 42, 0.8);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    bottom: 30px;
+    right: 29px;
+}
+
+.makeDefaultInfo:before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50px;
+    width: 5px;
+    height: 5px;
+    border: 5px solid transparent;
+    border-top: 5px solid rgba(30, 33, 42, 0.8);
+}
+
+.leavePolicy {
+    margin-top: 24px;
+    width: 470px;
+    height: 67px;
+    border: 1px solid #00A0EC;
+    background: #EEF7FC;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #1E212A;
+    padding: 8px 12px;
+}
+
+.leavePolicy span {
+    color: #00A0EC;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cancelBtn {
+    width: 94px;
+    height: 40px;
+    border-radius: 6px;
+    background: #AFB6C6;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.createBtn {
+    width: 94px;
+    height: 40px;
+    border-radius: 6px;
+    background: #00A0EC;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}

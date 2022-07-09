@@ -1,0 +1,75 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    margin-top: 40px;
+}
+
+.locationsContainer h1 {
+    width: 118px;
+    height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #1E212A;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 6px;
+}
+
+.locationsContainer p {
+    width: 625px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.createLocationContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createLocationContainer:nth-child(0) {
+    width: 625px;
+}
+
+.createLocationBtn {
+    width: 152px;
+    height: 40px;
+    background: #00A0EC;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cardsContainer {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px 16px;
+}

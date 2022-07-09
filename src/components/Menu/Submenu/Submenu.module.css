@@ -1,0 +1,60 @@
+.closeBtnContainer {
+    position: absolute;
+    top: 78px;
+    right: -12px;
+    z-index: 100;
+}
+
+.closeBtn, .closeBtnRotate {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 1px rgba(46, 91, 255, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.closeBtn svg, .closeBtnRotate svg {
+    position: absolute;
+    left: 4px;
+    z-index: 11;
+    top: 6px;
+}
+
+.closeBtnRotate {
+    transform: rotate(180deg);
+}
+
+.subMenuContainer {
+    background-color: #F5F9FE;
+    height: 100vh;
+    border-right: solid 1px rgba(46, 91, 255, 0.1);
+    padding-top: 27px;
+    position: relative;
+    min-width: 240px;
+    transition: 0.3s, border 0s;
+}
+
+.subMenuContainerClosed {
+    position: relative;
+    background-color: #F5F9FE;
+    height: 100vh;
+    width: 0;
+    padding: 0;
+    padding-top: 24px;
+    border-right: none;
+    transition: 0.3s;
+}
+
+.subMenuContainer span ,.subMenuContainerClosed span {
+    color: #AFB6C6;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.subMenuContainer a, .subMenuContainerClosed a {
+    text-decoration: none;
+    color: #1E212A;
+}

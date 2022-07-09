@@ -1,0 +1,48 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(36, 44, 72, 0.3);
+    z-index: 99;
+}
+
+.modalContainer {
+    min-width: 460px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalTitle {
+    background-color: #F6F7FB;
+    height: 54px;
+    padding: 16px 24px 20px 16px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modalTitle svg {
+    cursor: pointer;
+}
+
+.modalTitle p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.main {
+    padding: 24px 40px;
+}

@@ -1,13 +1,56 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.appContainer {
+  max-width: 1366px;
+  width: 1366px;
+  min-width: 1366px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.appContainerWithSub {
+  max-width: 1366px;
+  width: 1366px;
+  min-width: 1366px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+/* Menu */
+
+.navLinkActive p{
+  color: #0682DD;
+}
+
+.navLinkActive svg path {
+  fill: #0682DD;
+}
+
+/* Submenu */
+.subMenuContainer .active {
+  color: #0682DD;
+  background-color: #EEF7FC;
+}
+
+/* Main */
+
+.Main {
+}
+
+/* svg */
+
+.arrovSvg {
+  margin: 0 6px ;
+}
+
+.ant-select {
+  margin: 0 0 1220px 8px;
 }

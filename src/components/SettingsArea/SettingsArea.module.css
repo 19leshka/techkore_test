@@ -1,0 +1,27 @@
+.settingsAreaContainer {
+    padding: 24px 40px 0;
+    width: 100%;
+}
+
+.settingsAreaContainer p {
+    margin-bottom: 0;
+}
+
+.navigation {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height, or 123% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #00A0EC;
+    margin-bottom: 8px;
+}
+
+.navigation .firstIcon {
+    margin-right: 4px;
+}
